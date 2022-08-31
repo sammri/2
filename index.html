@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Pезюме</title>
+</head>
+<body>
+    <!-- скролл на верху(progress bar) -->
+	<div class="progress-bar" id="progressBar" style="width: 24.0833%;"></div>
+	<script>
+		function progressBar() {
+    // Узнаем на сколько страница прокручена
+    let scroll = document.body.scrollTop || document.documentElement.scrollTop;
+    // Узнаем высоту всей страницы
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    // Получаем в % на сколько прокручена страница
+    let scrolled = scroll / height * 100;
+
+    // Подставляем % прокрутки в ширину нашей линии
+    document.getElementById('progressBar').style.width = scrolled + '%';
+}
+
+// Запускаем функцию, когда пользователя скролит
+window.addEventListener('scroll', progressBar);
+	</script>
+    <!-- mein    -->
+    <div class="main">
+        <!-- mein content -->
+        <div class="mein-content">
+            <!-- about -->
+             <div class="about">
+                <h3 class="about-position">Front-End Developer</h3>
+                <h1 class="about-name">Chub Samir</h1>
+                <p class="about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p> 
+             </div> 
+             
+             <div class="Projects">
+                <h3 class="title">
+                Projects
+                </h3>
+
+                <ol class="progects-list">
+                    <li class="progect-title">
+                        <span class="progect">
+                            <a href="https://hellenglish.goit.global/" class="progect-link">https://hellenglish.goit.global/</a>
+                            ............
+                            <span class="progect-braket">[</span> HTML5, CSS3 <span class="progect-braket">]</span>
+                        </span>
+                    </li>
+                    <li class="progect-title">
+                        <span class="progect">
+                            <a href="https://cryptohub.goit.global/" class="progect-link">https://cryptohub.goit.global/</a>
+                            .............
+                           <span class="progect-braket">[</span> JavaScript  <span class="progect-braket">]</span>
+                        </span>
+                    </li>
+                
+                    <li class="progect-title">
+                        <span class="progect">
+                            <a href="https://kidslike.goit.global/" class="progect-link">https://kidslike.goit.global/</a>
+                            ..................
+                          <span class="progect-braket">[ </span>React.js, Node.js <span class="progect-braket">]</span>
+                        </span>
+                    </li>
+                </ol>
+            </div> 
+            <!-- Work -->
+            <div class="Work">
+                <h3 class="title">Work Experience</h3>
+                <!-- 1 -->
+                <div>
+                    <h4>
+                        Front-End Developer <span class="work-position">Freelance</span>
+                    </h4>
+                        <p>
+                             September 2019 - up to now   |   Country
+                        </p>
+                            <ul class="progects-list"> 
+                                <li class="progect-link">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </li >
+                                <li class="progect-link">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </li >
+                                <li class="progect-link">
+                                    Risus commodo viverra maecenas.
+                                </li>
+                                <li class="progect-link">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                                </li>
+                            </ul>
+                </div>
+                <!-- 2 -->
+                <div>
+                    <h4>
+                        Manager <span class="work-position">Roga & Kopyta New</span>
+                    </h4>
+                         <p>
+                            March 2015 - October 2018   |   Country
+                         </p>
+                    <ul class="progects-list">
+                        <li class="progect-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. </li>
+                         <li class="progect-link">Quis ipsum suspendisse ultrices gravida.</li>
+                         <li class="progect-link">Risus commodo viverra maecenas. </li>
+                    </ul>
+                </div>
+                <!-- 3 -->
+                <div>
+                    <h4>
+                        Manager <span class="work-position">Roga & Kopyta LLC </span>
+                    </h4>
+                        <p>
+                            June 2014 - February 2015   |   Country
+                        </p>
+                        <ul class="progects-list">
+                            <li class="progect-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                             <li class="progect-link">Quis ipsum suspendisse ultrices gravida.</li>
+                             <li class="progect-link">Risus commodo viverra maecenas.</li>
+                        </ul>
+                </div>
+            </div>
+            <!-- Education -->
+            <div>
+            <h3>
+                Education
+            </h3>
+            <h4>
+                <span class="work-position">National University of Radioelectronics</span>
+            </h4>
+            <h4>
+                Management
+            </h4>
+            <p>September 2009 - June 2014   |   Country</p>
+            </div>
+        </div>
+        <!-- Siedebar -->
+        <aside class="siedbar">
+        <!-- img -->
+        <img src="img/photo_2022-07-22_18-39-31.jpg" alt="">
+           <!-- Contacts -->
+           <div class="Contacts">
+           
+            <div class="Contact">
+                <h3 class="Siedebar-title">Contacts</h3>
+                    <span class="contact">
+                        C:
+                    </span>
+
+                        <a href="+380977022271" class="A" target="_blank">+380977022271</a><br>
+
+            
+                    <span class="contact1">
+                        E:
+                    </span> 
+                        <a href="mailto:ivoldemort4837@gmail.com" class="a">ivoldemort4837@...</a>
+
+            </div>
+            <!-- Tech Skills -->
+            <div>
+            <h3 class="Siedebar-Title">Tech Skills</h3 Tech>
+                <ul class="Tech-Skills">
+                    <li class="li"><span class="text">HTML5</span> </li>
+                    <li class="li"><span class="text">CSS3</span></li>
+                    <li class="li"><span class="text">GIT</span></li>
+                    <li class="li"><span class="text">WebPack</span></li>
+                    <li class="li"><span class="text">JavaScript</span></li>
+                    <li class="li"><span class="text">React.js</span></li>
+                    <li class="li"><span class="text">Node.js</span></li>
+                </ul>
+            </div>
+            <!-- Soft Skills -->
+        
+             <div>
+                 <h3 class="Siedebar-title">Soft Skills </h3>
+                    <ul class="Tech-Skills">
+                    <li class="li"><span class="text">Scrum</span></li>
+                    <li class="li"><span class="text">Agile</span></li>
+                    <li class="li"><span class="text">GTD</span></li>
+                    <li class="li"><span class="text">Teamwork</span></li>
+             </ul>   
+            </div>
+    </div>
+        </aside>
+    </div>
+    
+</body>
+</html>
